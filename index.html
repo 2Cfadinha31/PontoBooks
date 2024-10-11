@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <title>PontoBooks</title>
+</head>
+
+<body>
+    <header class="cabeçalho">
+      <div class="container1">
+        <div class="menu-hamburguer" onclick="this.classList.toggle('open'); document.getElementById('menu').classList.toggle('active');">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul id="menu" class="menu">
+          <li>Romance</li>
+          <li>Suspense</li>
+          <li>Fantasia</li>
+        </ul>
+        <h1 class="container__titulo"><b class="container__titulo--negrito">Ponto</b>Books </h1>
+      </div>
+      
+      <ul class="opcoes">
+        <li class="opcoes__item" onclick="toggleList()">Categorias</li>
+        <ul id="categoriasList" style="display: none;" class="categorias__lista">
+            <li>Romance</li>
+            <li>Suspense</li>
+            <li>Fantasia</li>
+        </ul>
+        <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+        <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
+    </ul>
+    
+      
+        <div class="container">
+        <a href="#" id="InicioLink"><img src="logo.png" alt="Logo do PontoBooks" height="40px" class="container__imagem"></a>
+        <a href="#"> <img src="favoritos.png" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
+        <a href="#" class="container__link">
+          <img src="Sacola.png" alt="Sacola de Compras" class="container__imagem">
+          <p class="container__texto">Minha Sacola</p>
+        </a>
+        <a href="#" id="loginLink" class="container__link">
+          <img src="usuario.png" alt="Meu Usuário" class="container__imagem">
+          <p class="container__texto">Meu Usuário</p>
+        </a>
+
+        </div>
+    </header>
+    
+    <section class="banner">
+      <h2 class="banner__titulo">Está procurando algum livro?</h2>
+      <p class="banner__texto">Procure em nosso acervo o livro que você deseja!</p>
+      <input type="search" class="banner__pesquisa" placeholder="Procure seu livro aqui">
+    </section>
+    
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Livros Sáficos</h2>
+        <section class="container2">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="conectadas.jpg" alt="Livro Conectadas">
+          <img id="slide-2" src="setemaridos.jpg" alt="Livro Os Sete Maridos de Evelyn Hugo">
+          <img id="slide-3" src="ajogada.jpg" alt="Livro A Jogada do Amor">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+      </div>
+      </div>
+    </section>
+    </section>
+      <div class="card">
+  <!-- 1° linha -->
+  <div class="card__descricao">
+    <!-- 1° coluna -->
+    <div class="descricao>">
+      <h3 class="descricao__titulo">★★★★★</h3>
+      <h2 class="descricao__titulo-livro2">Autora da semana</h2>
+      <h1 class="descricao__titulo-livro">Elayne Baeta</h1>
+      <p class="descricao__texto">"Quando eu saí do armário, minha mãe me chamou de maldição. Hoje, ela diz que, se eu não passar ferro na minha camisa direito, nenhuma menina vai olhar pra mim. Esse é o máximo que eu sei sobre o processo evolutivo das borboletas."</p>
+    </div>
+    <!-- 2° coluna -->
+    <img src="elaynebaeta.jpeg" class="descricao__imagem">
+  </div>
+  <!-- 2° linha -->
+  <div class="card__botoes">
+    <!-- 1° coluna-->
+    <ul class="botoes">
+      <li class="botoes__item"><img src="favoritos.png" alt="Favoritar livro"></li>
+    </ul>
+    <!-- 2° coluna-->
+    <a href="#" class="botoes__ancora">Saiba mais</a>
+  </div>
+</div>
+    </div>
+    <section class="carrossel">
+<h2 class="carrossel__titulo">Livros Aquilianos</h2>
+  <section class="container2">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-4" src="osdoismorrem.jpg" alt="Livro Os Dois Morrem no Final">
+        <img id="slide-5" src="quinzedias.jpg" alt="Livro Quinze Dias">
+        <img id="slide-6" src="cancaodeaquiles.jpg" alt="Livro A Canção de Aquiles">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+        <a href="#slide-6"></a>
+    </div>
+  </section>
+  </section>
+
+<div class="card">
+  <!-- 1° linha -->
+  <div class="card__descricao">
+    <!-- 1° coluna -->
+    <div class="descricao>">
+      <h3 class="descricao__titulo">Talvez você se interesse por...</h3>
+      <h2 class="descricao__titulo-livro2">Heartstopper</h2>
+      <p class="descricao__texto">"Lutar pelo amor é bom, mas alcançá-lo sem luta é melhor."
+          - William Shakespeare</p>
+    </div>
+    <!-- 2° coluna -->
+    <img src="Heartstopper.jpg" class="descricao__imagem-2">
+  </div>
+  <!-- 2° linha -->
+  <div class="card__botoes">
+    <!-- 1° coluna-->
+    <ul class="botoes">
+      <li class="botoes__item"><img src="favoritos.png" alt="Favoritar livro"></li>
+      <li class="botoes__item"><img src="Sacola.png" alt="Adicionar à sacola de compras"></li>
+    </ul>
+    <!-- 2° coluna-->
+    <a href="#" class="botoes__ancora">Saiba mais</a>
+  </div>
+</div>
+    </div>
+    <section class="topicos">
+      <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+      <ul class="topicos__lista">
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Baratos</a>
+        </li>
+        <li class="topicos__item">
+  <a href="#" class="topicos__link">Rápidos</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Vitor Martins</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Inglês</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Protagonistas Femininas</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Romance</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Protagonistas Negros</a>
+</li>
+<li class="topicos__item">
+  <a href="#" class="topicos__link">Fantasia</a>
+</li>
+      </ul>
+    </section>
+    
+    <section class="contato">
+      <div class="contato__descricao">
+      <h2 class="contato__titulo">Fique por dentro das promoções</h2>
+      <p class="contato__texto">Atualização de e-books, novos livros, promoções e outros.</p>
+    </div>
+      <input type="email" placeholder="Digite seu email para receber as atualizações" class="contato__email">
+    </section>
+    
+    <hr/>
+    
+    <footer class="rodape">
+      <h2 class="rodape__titulo">PontoCom©</h2>
+    </footer>
+    
+    <div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 class="titulo__login">Login</h2>
+    <form>
+      <label for="email" class="titulo__email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="password" class="titulo__senha">Senha:</label>
+      <input type="password" id="password" name="password" required><br><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const loginLink = document.getElementById("loginLink");
+  const loginModal = document.getElementById("loginModal");
+  const closeModal = document.querySelector(".close");
+
+  loginLink.onclick = function(event) {
+    event.preventDefault();
+    loginModal.style.display = "block";
+  }
+
+  closeModal.onclick = function() {
+    loginModal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == loginModal) {
+      loginModal.style.display = "none";
+    }
+  }
+
+  function toggleList() {
+    const list = document.getElementById('categoriasList');
+    list.style.display = list.style.display === 'none' ? 'block' : 'none';
+  }
+
+  const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach(slider => {
+  let isDragging = false;
+  let startX, scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDragging = false;
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+
+  slider.addEventListener('scroll', () => {
+    const scrollPosition = slider.scrollLeft;
+    const slideWidth = slider.clientWidth;
+  });
+});
+
+const opcoesItems = document.querySelectorAll('.opcoes__item, .opcoes__link');
+
+opcoesItems.forEach(item => {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+});
+
+</script>
+
+</body>
+</html>
